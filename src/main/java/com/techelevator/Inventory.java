@@ -10,7 +10,7 @@ public interface Inventory {
 
     public String getName();
 
-    public BigDecimal getPrice();
+    public double getPrice();
 
     public int getQuantity();
 
