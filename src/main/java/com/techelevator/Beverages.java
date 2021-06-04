@@ -1,17 +1,21 @@
 package com.techelevator;
 
+import java.math.BigDecimal;
+
 public class Beverages implements Inventory{
 
     private String name;
-    private double price;
+    private BigDecimal  price;
     private int quantity;
     private String slot;
+    private String type;
 
-    public Beverages(String name, double price, int quantity, String slot ) {
+    public Beverages(String name, BigDecimal  price, int quantity, String slot, String type ) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
         this.slot = slot;
+        this.type = type;
     }
 
     @Override
@@ -23,7 +27,7 @@ public class Beverages implements Inventory{
         return name;
     }
 
-    public double getPrice() {
+    public  BigDecimal  getPrice() {
         return price;
     }
 
@@ -33,6 +37,10 @@ public class Beverages implements Inventory{
 
     public String getSlot() {
         return slot;
+    }
+
+    public String getType() {
+        return type;
     }
 
     public int decrement() {
