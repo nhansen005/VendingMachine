@@ -4,6 +4,13 @@ import com.techelevator.view.Menu;
 
 public class VendingMachineCLI {
 
+<<<<<<< HEAD
+=======
+	private static final String PURCHASE_MENU_OPTION_FEED_MONEY = "Feed Money";
+		private static final String PURCHASE_MENU_OPTION_SELECT_PRODUCT = "Select Product";
+	private static final String PURCHASE_MENU_OPTION_FINISH_TRANSACTION = "Finish Transaction"
+
+>>>>>>> 258adaf62abbbfc5a81d91c0e568d60db2a081f7
 	private static final String MAIN_MENU_OPTION_DISPLAY_ITEMS = "Display Vending Machine Items";
 	private static final String MAIN_MENU_OPTION_PURCHASE = "Purchase";
 	private static final String[] MAIN_MENU_OPTIONS = { MAIN_MENU_OPTION_DISPLAY_ITEMS, MAIN_MENU_OPTION_PURCHASE };
@@ -28,16 +35,25 @@ public class VendingMachineCLI {
 			String choice = (String) menu.getChoiceFromOptions(MAIN_MENU_OPTIONS);
 
 			if (choice.equals(MAIN_MENU_OPTION_DISPLAY_ITEMS)) {
-				// display vending machine items
+				//display vending machine items
 			} else if (choice.equals(MAIN_MENU_OPTION_PURCHASE)) {
 				// do purchase
 				} while (true) {
+<<<<<<< HEAD
 				String purchaseChoice = (String) menu.getChoiceFromOptions(PURCHASE_MENU_OPTIONS);
 				 if (purchaseChoice.equals(PURCHASE_MENU_OPTION_FEED_MONEY)) {
 				// feed vending machine money
 			 } else if (purchaseChoice.equals(PURCHASE_MENU_OPTION_SELECT_PRODUCT)) {
 				// select the product
 				} else if (purchaseChoice.equals(PURCHASE_MENU_OPTION_FINISH_TRANSACTION));
+=======
+				String purchaseChoice = (String) menu.getChoiceFromOptionsPurchaseMenu(PURCHASE_MENU_OPTIONS);
+				 if (purchaseChoice.equals(PURCHASE_MENU_OPTION_FEED_MONEY)) {
+				//feed vending machine money
+			} else if (purchaseChoice.equals(PURCHASE_MENU_OPTION_SELECT_PRODUCT)) {
+				// select the product
+					 } else if (purchaseChoice.equals(PURCHASE_MENU_OPTION_FINISH_TRANSACTION));
+>>>>>>> 258adaf62abbbfc5a81d91c0e568d60db2a081f7
 				// finish transaction
 			}
 		}
