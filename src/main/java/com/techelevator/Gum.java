@@ -1,16 +1,16 @@
 package com.techelevator;
 
-import java.math.BigDecimal;
+
 
 public class Gum implements Inventory {
 
     private String name;
-    private BigDecimal price;
+    private double price;
     private int quantity;
     private String slot;
     private String type;
 
-    public Gum(String name, BigDecimal price, int quantity, String slot, String type ) {
+    public Gum(String name, double price, int quantity, String slot, String type ) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
@@ -27,7 +27,7 @@ public class Gum implements Inventory {
         return name;
     }
 
-    public BigDecimal getPrice() {
+    public double getPrice() {
         return price;
     }
 
