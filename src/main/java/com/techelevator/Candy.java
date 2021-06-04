@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 public class Candy implements Inventory {
     private String name;
-    private BigDecimal  price;
+    private double  price;
     private int quantity;
     private String slot;
     private String type;
