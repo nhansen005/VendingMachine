@@ -5,13 +5,14 @@ import static org.junit.Assert.*;
 import java.math.BigDecimal;
 import java.util.Scanner;
 
+import com.techelevator.view.AuditEntry;
 import org.junit.Before;
 import org.junit.Test;
 
 public class AuditTest {
 
-    Audit testWriter = new Audit();
-    Scanner sc = new Scanner(".log.txt");
+    AuditEntry testWriter = new AuditEntry();
+    Scanner sc = new Scanner("./log.txt");
 
     @Before
     public void setUp() throws Exception {

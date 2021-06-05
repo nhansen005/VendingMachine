@@ -1,4 +1,4 @@
-package com.techelevator;
+package com.techelevator.view;
 
 import java.math.BigDecimal;
 
@@ -10,7 +10,9 @@ public interface Inventory {
 
     public String getName();
 
-    public double getPrice();
+    public BigDecimal getPrice();
+
+    public String getType();
 
     public int getQuantity();
 
