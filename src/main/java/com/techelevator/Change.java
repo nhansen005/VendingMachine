@@ -2,7 +2,7 @@ package com.techelevator;
 
 
 
-public class Change {
+public abstract class Change {
     private static int numberOfQuarters;
     private static int numberOfDimes;
     private static int numberOfNickels;

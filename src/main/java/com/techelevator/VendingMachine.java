@@ -106,14 +106,11 @@ public class VendingMachine extends Change{
         return balance;
     }
    
-    public void finishTransaction(double calculateChange) {
-        if(calculateChange  >= 0) {
-             return getCalculateChange;
+    public int giveChange;
 
         }
 
 
-    }
 
 
-}
+
