@@ -43,7 +43,7 @@ public class MenuTest {
     }
 
     @Test
-    public void redisplays_menu_if_user_does_not_choose_valid_option() {
+    public void displays_menu_if_user_does_not_choose_valid_option() {
         Object[] options = new Object[] { "Larry", "Curly", "Moe" };
         Menu menu = getMenuForTestingWithUserInput("4\n1\n");
 
@@ -58,7 +58,7 @@ public class MenuTest {
     }
 
     @Test
-    public void redisplays_menu_if_user_chooses_option_less_than_1() {
+    public void displays_menu_if_user_chooses_option_less_than_1() {
         Object[] options = new Object[] { "Larry", "Curly", "Moe" };
         Menu menu = getMenuForTestingWithUserInput("0\n1\n");
 
@@ -73,7 +73,7 @@ public class MenuTest {
     }
 
     @Test
-    public void redisplays_menu_if_user_enters_garbage() {
+    public void displays_menu_if_user_enters_garbage() {
         Object[] options = new Object[] { "Larry", "Curly", "Moe" };
         Menu menu = getMenuForTestingWithUserInput("Mickey Mouse\n1\n");
 
